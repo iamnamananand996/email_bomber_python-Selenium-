@@ -7,13 +7,13 @@ browser.get("https://accounts.google.com/signin/v2/identifier?service=mail&passi
 
 
 email = browser.find_element_by_class_name("whsOnd")
-email.send_keys('iamnamananand996@gmail.com')
+email.send_keys('your_email_id')
 email.send_keys(Keys.RETURN)
 
 time.sleep(4)
 
 pwd = browser.find_element_by_class_name("whsOnd")
-pwd.send_keys('naman@anand')
+pwd.send_keys('email_id_pwd')
 pwd.send_keys(Keys.RETURN)
 
 time.sleep(40)
@@ -27,7 +27,7 @@ for i in range(10):
 
     time.sleep(3)
     to_email = browser.find_element_by_class_name("vO")
-    to_email.send_keys("iamnamananand2@gmail.com")
+    to_email.send_keys("email_id_where_want_to send email")
     to_email.send_keys(Keys.RETURN)
 
     time.sleep(2)
